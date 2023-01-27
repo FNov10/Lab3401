@@ -1,0 +1,9 @@
+q1- env_vars = {key:val for key,val in os.environ.items()}
+q2- QUERY_STRING
+q3HTTP_USER_AGENT
+q4- s - cgi.getFieldStorage()
+    username = s.getfirst("username")
+    password = s.getfirst("password")
+q5- f"Set-Cookie: username = {username}"
+    f"Set-Cookie: password = {password}"
+q6- http_cookie, cookie=SimpleCookie(os,environ["HTTP_COOKIE"])
